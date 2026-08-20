@@ -15,11 +15,17 @@ dotnet add package BasAutomation.Geometry
 ## What's in it
 
 - **Core** — `Point2D` / `Point3D`, `Vector2D` / `Vector3D`, `Matrix2D` / `Matrix3D`,
-  `Plane3D`, `Box2D` / `Box3D`, `Rectangle2D`
+  `Plane3D`, `Box2D` / `Box3D`, `OrientedBox3D`, `Rectangle2D`, miter-plane math
 - **Curves** — `Line2D` / `Line3D`, `Arc2D` / `Arc3D`, `Circle2D` / `Circle3D`,
-  `Ellipse2D`, behind `ICurve2D` / `ICurve3D`
-- **Coordinate systems** — `CoordinateSystem2D` / `CoordinateSystem3D` transforms
+  `Ellipse2D` / `Ellipse3D`, behind `ICurve2D` / `ICurve3D`, plus `Path3D`,
+  contour offsetting, and curve ordering/intersection helpers
+- **Surfaces** — swept-surface construction from profile curves: cylinder, cone
+  and torus sweeps, a line-sweep classifier (radial/tangential/tilted), and an
+  exact rational B-spline sweep for elliptical profiles
+- **Coordinate systems** — `CoordinateSystem2D` / `CoordinateSystem3D` transforms,
+  face-aligned frames, rigid-motion fitting, orientation following
 - **Ray casting** — `Ray3D` and intersection utilities
+- **Validation** — cross-section validation with structured issues
 
 Everything targets `net8.0` and has **zero package dependencies**.
 
