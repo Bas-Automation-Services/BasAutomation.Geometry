@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <!-- NuGet package metadata -->
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>BasAutomation.Geometry</PackageId>
+    <!-- Never hand-bump: the release/geometry-vX.Y.Z branch name is the source of
+         truth for shipped versions; CI passes -p:Version. -->
+    <Version>0.0.0-dev</Version>
+    <Authors>Bas Nederveen</Authors>
+    <Company>Bas Automation Services</Company>
+    <Product>BasAutomation.Geometry</Product>
+    <Description>A small, dependency-free 2D/3D computational geometry library for .NET: points, vectors, matrices, planes, boxes, lines, arcs, circles and ellipses, plus coordinate-system transforms and ray casting. CAD-kernel independent — the geometry primitives behind the BasAutomation transient-BRep beam series.</Description>
+    <PackageTags>geometry;3d;2d;cad;vector;matrix;computational-geometry;inventor;raycasting</PackageTags>
+    <!-- Override the repo-wide proprietary license (src/Directory.Build.props) for this public package. -->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageProjectUrl>https://basautomationservices.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Basnederveen/BasAutomation.Geometry</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>PACKAGE-README.md</PackageReadmeFile>
+    <Copyright>Copyright (c) 2026 Bas Nederveen</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="PACKAGE-README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
