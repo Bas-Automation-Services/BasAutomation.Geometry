@@ -23,7 +23,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageLicenseFile></PackageLicenseFile>
     <PackageProjectUrl>https://basautomationservices.com</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Basnederveen/BasAutomation.Geometry</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Bas-Automation-Services/BasAutomation.Geometry</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>PACKAGE-README.md</PackageReadmeFile>
     <Copyright>Copyright (c) 2026 Bas Nederveen</Copyright>

@@ -77,6 +77,28 @@ public class Arc3DTests
     }
 
     [Fact]
+    public void PointAt_ClockwiseQuarter_EndsAtEndAngle()
+    {
+        // A concave fillet as profile outlines write it: clockwise from 270 down to 180 degrees.
+        var arc = new Arc3D(
+            new Point3D(0, 0, 0),
+            new Vector3D(0, 0, 1),
+            new Vector3D(1, 0, 0),
+            1.0,
+            3 * Math.PI / 2,
+            Math.PI,
+            false);
+
+        Assert.Equal(0, arc.StartPoint.X, Tolerance);
+        Assert.Equal(-1, arc.StartPoint.Y, Tolerance);
+        Assert.Equal(-0.707107, arc.MidPoint.X, Constants.Tolerance);
+        Assert.Equal(-0.707107, arc.MidPoint.Y, Constants.Tolerance);
+        Assert.Equal(-1, arc.EndPoint.X, Tolerance);
+        Assert.Equal(0, arc.EndPoint.Y, Tolerance);
+        Assert.Equal(Math.PI / 2, arc.Length, Tolerance);
+    }
+
+    [Fact]
     public void TangentAt_Start_PointsInCorrectDirection()
     {
         // Arrange

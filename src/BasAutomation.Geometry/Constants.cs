@@ -1,5 +1,8 @@
 namespace BasAutomation.Geometry;
 
+/// <summary>
+/// Shared geometric constants.
+/// </summary>
 public static class Constants
 {
     /// <summary>
@@ -8,7 +11,7 @@ public static class Constants
     public const double Tolerance = 1e-6;
 
     /// <summary>
-    /// Tighter tolerance for geometry operations that need stricter end-ordering and trim validation.
+    /// A tighter tolerance for geometry equality, path ordering and trim validation where 1e-6 is too coarse.
     /// </summary>
     public const double GeometryTolerance = 1e-8;
 

@@ -68,10 +68,6 @@ package version is released. Development happens in a private monorepo, so the
 commit history here is one commit per release. Issues are welcome; for pull
 requests, please open an issue first so the change can be applied upstream.
 
-## About
-
-Made by [Bas Automation Services](https://basautomationservices.com): Autodesk Inventor add-ins and CAD automation from Rotterdam.
-
 ## License
 
 MIT © Bas Nederveen — Bas Automation Services
